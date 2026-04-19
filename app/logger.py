@@ -12,7 +12,6 @@ APP_NAME = os.getenv("APP_NAME", "fastapi-app")
 def get_logger(name: str = "app") -> logging.Logger:
     logger = logging.getLogger(name)
 
-    # Avoid adding duplicate handlers if get_logger is called multiple times
     if logger.handlers:
         return logger
 
