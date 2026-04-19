@@ -1,6 +1,0 @@
-fastapi
-uvicorn
-python-logging-loki
-pytest
-pytest-asyncio
-httpx
