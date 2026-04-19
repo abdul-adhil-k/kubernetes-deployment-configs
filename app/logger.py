@@ -24,7 +24,6 @@ def get_logger(name: str = "app") -> logging.Logger:
     )
     logger.addHandler(stdout_handler)
 
-    # Loki handler — pushes logs directly to Loki HTTP API
     try:
         loki_handler = logging_loki.LokiHandler(
             url=f"{LOKI_URL}/loki/api/v1/push",
