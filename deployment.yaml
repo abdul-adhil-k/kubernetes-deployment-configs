@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: fastapi-app
-          image: abduladhil/devops-app:6d9a85c1
+          image: abduladhil/devops-app:5a993477
           ports:
             - containerPort: 8000
           resources:
